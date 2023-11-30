@@ -102,6 +102,7 @@
     }
   }
   .popular_tours {
+    margin-bottom: 50px;
     margin-top: 50px;
     .popular_tours_text {
       h2 {
@@ -138,6 +139,16 @@
             align-items: center;
             gap: 10px;
             display: flex;
+            p {
+              font-weight: 700;
+            }
+          }
+          .item_top_right {
+            .favorites {
+              img {
+                cursor: pointer;
+              }
+            }
           }
         }
         .item_botton {
@@ -153,9 +164,13 @@
             gap: 5px;
             display: flex;
             img {
-              margin-top:3px;
+              margin-top: 3px;
               height: 11px;
             }
+          }
+          hr {
+            background: black;
+            height: 18px;
           }
         }
       }
@@ -166,5 +181,76 @@
         background: url(/public/itemtheree.jpg);
       }
     }
+    .swiper {
+      justify-content: end;
+      margin-top: 30px;
+      display: flex;
+      gap: 20px;
+      button {
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: 0;
+        img {
+          width: 10px;
+        }
+      }
+    }
+  }
+}
+
+.russia {
+  width: 100%;
+  text-align: center;
+  height: 600px;
+  background-image: url(/public/russia.jpg);
+  .russia_text {
+    padding-top: 50px;
+    text-align: center;
+    h1 {
+      margin-bottom: 30px;
+      color: #fcfcfc;
+      font-size: 45px;
+      font-weight: 700;
+    }
+    p {
+      color: #fcfcfc;
+      font-weight: 400;
+      margin-bottom: 30px;
+    }
+  }
+  .russia_flex {
+    width: 800px;
+    margin: 0 auto;
+    .elem {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+      p {
+        color: #a7aeb4;
+        width: 120px;
+        margin-bottom: 20px;
+      }
+      h4 {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        width: 120px;
+        color: white;
+      }
+    }
+  }
+  button {
+    color: white;
+    font-weight: 700;
+    margin-top: 20px;
+    width: 150px;
+    background: none;
+    border: 2px solid white;
+    height: 50px;
   }
 }
