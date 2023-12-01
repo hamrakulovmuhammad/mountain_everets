@@ -3,6 +3,37 @@
   padding: 0;
   box-sizing: border-box;
 }
+*::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #061B28;
+  
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #B8C0C2;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: white;
+
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: white;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: blue;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: blue;
+}
 .header {
   width: 100%;
   height: 650px;
@@ -204,9 +235,10 @@
 }
 
 .russia {
+  font-family: "Oswald", sans-serif;
   width: 100%;
   text-align: center;
-  height: 600px;
+  height: 650px;
   background-image: url(/public/russia.jpg);
   .russia_text {
     padding-top: 50px;
@@ -247,10 +279,135 @@
   button {
     color: white;
     font-weight: 700;
-    margin-top: 20px;
+    margin-top: 40px;
     width: 150px;
     background: none;
     border: 2px solid white;
     height: 50px;
+  }
+}
+
+.blog {
+  font-family: "Oswald", sans-serif;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  h1 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .blog_flex {
+    gap: 30px;
+    display: flex;
+    .blog_left {
+      .s {
+        text-align: start;
+        padding: 20px;
+        width: 400px;
+        height: 125px;
+        margin-bottom: 20px;
+        background: #061b28;
+        border-bottom: 2px solid black;
+        p {
+          font-weight: 800;
+          color: #7e8386;
+          font-size: 12px;
+          margin-bottom: 20px;
+        }
+        h5 {
+          font-weight: 800;
+          color: white;
+        }
+      }
+      .questions {
+        text-align: start;
+        padding: 20px;
+        width: 400px;
+        height: 125px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid black;
+        p {
+          font-weight: 800;
+          color: #7e8386;
+          font-size: 12px;
+          margin-bottom: 20px;
+        }
+        h5 {
+          font-weight: 800;
+        }
+      }
+      button {
+        margin-top: 20px;
+        width: 400px;
+        height: 40px;
+        color: white;
+        font-weight: 500;
+        background-color: #ec5118;
+        border: 0;
+        cursor: pointer;
+      }
+    }
+    .blog_right {
+      img {
+        height: 280px;
+        width: 100%;
+      }
+      p {
+        font-size: 14px;
+        margin-bottom: 20px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+.need_help_flex {
+  display: flex;
+  font-family: "Oswald", sans-serif;
+
+  .need_help_flex_left {
+    width: 100%;
+    padding: 7%;
+    height: 100%;
+    background-color: #061b28;
+    h2 {
+      font-size: 40px;
+      color: white;
+      margin-bottom: 20px;
+    }
+    p {
+      color: #fcfcfc;
+      font-weight: 400;
+      line-height: 40px;
+      font-size: 20px;
+    }
+    .p {
+      font-size: 14px;
+    }
+    input {
+      width: 100%;
+      height: 50px;
+      margin-bottom: 20px;
+      background: none;
+      border: 0;
+      border-bottom: 2px solid #7e8386;
+    }
+    button {
+      cursor: pointer;
+      width: 100%;
+      padding: 20px;
+      color: white;
+      background: #ec5118;
+      font-weight: 600;
+      border: 0;
+      margin-bottom: 30px;
+    }
+  }
+  .need_help_flex_right {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(/public/needhelp.jpg);
+    width: 100%;
+    padding: 1px;
   }
 }
