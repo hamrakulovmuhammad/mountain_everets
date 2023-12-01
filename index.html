@@ -8,19 +8,21 @@
   </head>
   <body>
     <div class="everest">
-      <div class="header">
+      <div class="header" id="0">
         <div class="container">
           <div class="header_side">
             <div class="header_left">
               <div class="logo">
-                <img src="/public/logo.svg" alt="" />
+                <a href="#0">
+                  <img src="/public/logo.svg" alt="" />
+                </a>
               </div>
               <nav class="nav">
-                <a href="">О нас</a>
-                <a href="">Туры</a>
-                <a href="">Подбор тура</a>
-                <a href="">Блог</a>
-                <a href="">Контакты</a>
+                <a href="#1">О нас</a>
+                <a href="#2">Туры</a>
+                <a href="#3">Подбор тура</a>
+                <a href="#4">Блог</a>
+                <a href="#5">Контакты</a>
               </nav>
             </div>
             <div class="header_right">
@@ -44,7 +46,7 @@
         </div>
       </div>
       <div class="container">
-        <div class="top_of_the_world">
+        <div class="top_of_the_world" id="2">
           <div class="top_of_the_world_text">
             <h2>Туры с восхождением на вершины мира</h2>
             <p>
@@ -73,7 +75,7 @@
           <div class="popular_tours_text">
             <h2>Популярные туры</h2>
           </div>
-          <div class="popular_tours_flex">
+          <div class="popular_tours_flex" id="3">
             <div class="item_one item">
               <div class="item_top">
                 <div class="item_top_left">
@@ -166,7 +168,7 @@
           </div>
         </div>
       </div>
-      <div class="russia">
+      <div class="russia" id="1">
         <div class="container">
           <div class="russia_text">
             <h1>Россия</h1>
@@ -215,12 +217,12 @@
           <button>Смотреть все</button>
         </div>
       </div>
-      <div class="blog">
+      <div class="blog" id="4">
         <div class="container">
           <h1>Блог</h1>
           <div class="blog_flex">
             <div class="blog_left">
-              <div class="questions">
+              <div class="questions s">
                 <p>15 января, 2020</p>
                 <h5>
                   Как подготовиться к первому <br />
@@ -234,7 +236,7 @@
                   Красная Поляна 13-16 февраля
                 </h5>
               </div>
-              <div class="questions s">
+              <div class="questions">
                 <p>20 декабря, 2019</p>
                 <h5>
                   Особенности альпинизма на Камчатке. <br />
@@ -294,7 +296,7 @@
           </div>
         </div>
       </div>
-      <div class="need_help">
+      <div class="need_help" id="4">
         <div class="need_help_flex">
           <div class="need_help_flex_left">
             <h2>
@@ -320,9 +322,14 @@
         </div>
       </div>
       <div class="container">
-        <div class="location_and_contact">
+        <div class="location_and_contact" id="5">
           <div class="location_side">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0cdeadfa9cedcc35076f16a7fe32de769bb1755b835ee26bce7af64232ffa1fc&amp;width=600&amp;height=457&amp;lang=ru_RU&amp;scroll=true"></script>
+            <script
+              type="text/javascript"
+              charset="utf-8"
+              async
+              src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0cdeadfa9cedcc35076f16a7fe32de769bb1755b835ee26bce7af64232ffa1fc&amp;width=600&amp;height=457&amp;lang=ru_RU&amp;scroll=true"
+            ></script>
           </div>
           <div class="contact_side">
             <h2>Контакты</h2>
@@ -354,15 +361,18 @@
           </div>
         </div>
       </div>
-      <div class="footer">
+      <div class="footer" id="5">
         <div class="container">
           <div class="footer_flex">
             <p>Maroon @ 2020 Все права защищены</p>
-            <img src="/public/logo.svg" alt="" />
+            <a href="#0">
+              <img src="/public/logo.svg" alt="" />
+            </a>
             <p>Политика конфиденциальности</p>
           </div>
         </div>
       </div>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
